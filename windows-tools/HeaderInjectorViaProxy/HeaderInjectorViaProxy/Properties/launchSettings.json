@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "HeaderInjectorViaProxy": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 8800"
+    }
+  }
+}
