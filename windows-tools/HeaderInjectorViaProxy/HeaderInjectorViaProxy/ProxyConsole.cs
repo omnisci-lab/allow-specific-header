@@ -27,10 +27,16 @@ public static class ProxyConsole
         }
         else if (_consoleArgument.Check(ConsoleArgument.Flag("--hidden")))
         {
-            ConsoleApp.HiddenConsole();
             _proxy?.Start();
 
-            while (true) { Thread.Sleep(20000); }
+            Console.WriteLine($"Proxy is running on port {AppSettings.ProxyPort}");
+            Console.WriteLine("Free console... in 3 seconds");
+            Thread.Sleep(3000);
+
+            ConsoleApp.FreeConsole();
+            SystemTray.Add();
+
+            Thread.Sleep(Timeout.Infinite);
         }
         else if (_consoleArgument.Check(ConsoleArgument.Option("--port")))
         {
@@ -57,10 +63,16 @@ public static class ProxyConsole
             if (ParsePort(out int portNumber))
             {
                 _proxy?.ChangePort(portNumber);
-                ConsoleApp.HiddenConsole();
                 _proxy?.Start();
 
-                while (true) { Console.Read(); }
+                Console.WriteLine($"Proxy is running on port {portNumber}");
+                Console.WriteLine("Free console... in 3 seconds");
+                Thread.Sleep(3000);
+
+                ConsoleApp.FreeConsole();
+                SystemTray.Add();
+
+                Thread.Sleep(Timeout.Infinite);
             }
             else
             {

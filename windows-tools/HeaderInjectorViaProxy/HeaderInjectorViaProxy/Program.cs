@@ -1,18 +1,20 @@
 ﻿using HeaderInjectorViaProxy;
 using HeaderInjectorViaProxy.Core;
 
-AppSettings.RunWithWriteLog(
-    () =>
-    {
-        ProxyConsole.PrintAppInfo();
+AppSettings.RunWithWriteLog(() => MainAction(args), AfterError);
 
-        Console.WriteLine("\n\n");
+static void MainAction(string[] args)
+{
+    ConsoleApp.AllocConsole();
+    ProxyConsole.PrintAppInfo();
 
-        ProxyConsole.Run(args);
-    },
-    () =>
-    {
-        Console.WriteLine("Something went wrong!");
-        Console.Read();
-    }
-);
+    Console.WriteLine("\n\n");
+
+    ProxyConsole.Run(args);
+}
+
+static void AfterError()
+{
+    Console.WriteLine("Something went wrong!");
+    Console.Read();
+}
