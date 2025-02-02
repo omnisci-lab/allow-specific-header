@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35527.113
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderInjectorViaProxy", "HeaderInjectorViaProxy\HeaderInjectorViaProxy.csproj", "{1E67A8ED-FC83-4029-8B28-6936F6588FE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderInjectorViaProxy.Core", "HeaderInjectorViaProxy.Core\HeaderInjectorViaProxy.Core.csproj", "{2944AB10-E93C-4B8E-949B-B30AFDE197A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderInjectorViaProxy.WinServices", "HeaderInjectorViaProxy.WinServices\HeaderInjectorViaProxy.WinServices.csproj", "{733B51B7-5072-4A27-9A1E-291CCDCF4B01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,22 @@ Global
 		{1E67A8ED-FC83-4029-8B28-6936F6588FE0}.Release|Any CPU.Build.0 = Release|x64
 		{1E67A8ED-FC83-4029-8B28-6936F6588FE0}.Release|x64.ActiveCfg = Release|x64
 		{1E67A8ED-FC83-4029-8B28-6936F6588FE0}.Release|x64.Build.0 = Release|x64
+		{2944AB10-E93C-4B8E-949B-B30AFDE197A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2944AB10-E93C-4B8E-949B-B30AFDE197A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2944AB10-E93C-4B8E-949B-B30AFDE197A9}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2944AB10-E93C-4B8E-949B-B30AFDE197A9}.Debug|x64.Build.0 = Debug|Any CPU
+		{2944AB10-E93C-4B8E-949B-B30AFDE197A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2944AB10-E93C-4B8E-949B-B30AFDE197A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2944AB10-E93C-4B8E-949B-B30AFDE197A9}.Release|x64.ActiveCfg = Release|Any CPU
+		{2944AB10-E93C-4B8E-949B-B30AFDE197A9}.Release|x64.Build.0 = Release|Any CPU
+		{733B51B7-5072-4A27-9A1E-291CCDCF4B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733B51B7-5072-4A27-9A1E-291CCDCF4B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733B51B7-5072-4A27-9A1E-291CCDCF4B01}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{733B51B7-5072-4A27-9A1E-291CCDCF4B01}.Debug|x64.Build.0 = Debug|Any CPU
+		{733B51B7-5072-4A27-9A1E-291CCDCF4B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733B51B7-5072-4A27-9A1E-291CCDCF4B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{733B51B7-5072-4A27-9A1E-291CCDCF4B01}.Release|x64.ActiveCfg = Release|Any CPU
+		{733B51B7-5072-4A27-9A1E-291CCDCF4B01}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

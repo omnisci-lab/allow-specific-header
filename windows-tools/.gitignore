@@ -364,4 +364,5 @@ FodyWeavers.xsd
 
 # Custom
 /HeaderInjectorViaProxy/HeaderInjectorViaProxy/appsettings.json
+/HeaderInjectorViaProxy/HeaderInjectorViaProxy.WinServices/appsettings.json
 /mitmproxy/config.json

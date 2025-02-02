@@ -20,7 +20,8 @@ public class ProxyService : ServiceBase
 
     protected override void OnStart(string[] args)
     {
-        Task.Run(() => { AppSettings.RunWithWriteLog(() => { _proxy?.Start(); }); });
+        AppSettings.RunWithWriteLog(() => { _proxy?.Start(); });
+        
     }
 
     protected override void OnStop()
