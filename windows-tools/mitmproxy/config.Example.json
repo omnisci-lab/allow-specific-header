@@ -1,0 +1,11 @@
+{
+  "hosts": [
+    "example.com"
+  ],
+  "headers": {
+    "header-name": "header-value"
+  },
+  "add_to_request": true,
+  "add_to_response": false,
+  "match_subdomains": true
+}
